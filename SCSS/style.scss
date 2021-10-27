@@ -10,6 +10,7 @@ $colorSecundarioHover:#8D59B5;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Slab&display=swap');
+
 @import "header";
 @import "footer";
 @import "main";
@@ -36,13 +37,4 @@ html, body {
     padding: 0;
 }
 
-.index{
-    img:hover{
-        transform: scale(1);
-    }
-    
-    img {
-        width: auto;
-    }
-}
 

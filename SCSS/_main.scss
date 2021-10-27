@@ -1,3 +1,36 @@
+/* INDEX */
+
+.index{
+    display: flex;
+    justify-content: center;
+    img:hover{
+        transform: scale(1);
+    }
+    
+    img {
+        width: auto;
+    }
+    .imagen-home{
+        width: 50%;
+        margin: 5%;
+    }
+    .intro{
+        width: 50%;
+        justify-content: center;
+        margin: auto;
+        h2{
+            font-style: italic;
+            font-size: 70px;
+            line-height: 64px;
+            text-align: center;
+        }
+        h3{
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+        }
+    }
+}
 /* SOBRE MI */
 
 
