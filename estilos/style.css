@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Slab&display=swap");
+/* HEADER */
+header {
+  padding: 5px 20px 0px 5px;
+  width: 100%;
+  text-decoration: none;
+  background-color: #FFFFFF; }
+  header h1 {
+    padding-left: 50px; }
+  header a {
+    text-decoration: none;
+    padding-right: 50px;
+    color: #000000; }
+  header a:hover {
+    color: #4D0089;
+    text-decoration-line: none; }
+  header nav {
+    float: right;
+    padding: 20px 0px 20px 20px; }
+    header nav div {
+      padding-right: 50px; }
+    header nav button {
+      padding: 0px; }
+    header nav .contenedorContacto {
+      background-color: #4D0089;
+      color: #FFFFFF;
+      padding: 7px;
+      border-radius: 3px; }
+    header nav .contenedorContacto:hover {
+      background-color: #8D59B5;
+      color: #FFFFFF; }
+  header nav button {
+    border-color: #FFFFFF; }
+
+/* FOOTER */
+footer {
+  font-size: 13px;
+  margin: 25px; }
+  footer img {
+    width: 40px; }
+  footer .redes {
+    padding-bottom: 10px; }
+    footer .redes img:hover {
+      transform: scale(1.2); }
+  footer .informacion {
+    text-align: right;
+    color: #FFFFFF; }
+    footer .informacion .creditos {
+      color: #FFFFFF;
+      text-decoration-line: underline; }
+    footer .informacion .creditos:hover {
+      color: #8D59B5; }
+
+.footerContacto {
+  padding-top: 50%; }
+
+/* SOBRE MI */
+.sobreMi img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px; }
+
+.sobreMi h2 {
+  font-size: 40px;
+  line-height: 36px;
+  text-align: center;
+  margin: 60px; }
+
+.sobreMi p {
+  margin-left: 17%;
+  margin-right: 17%;
+  height: auto;
+  font-size: 28px;
+  line-height: 48px;
+  text-align: center; }
+
+/* PORFOLIO */
+.porfolio {
+  display: grid;
+  grid-template-areas: "pTrabajo pFreelance";
+  padding-top: 23px; }
+  .porfolio .pTrabajo {
+    grid-area: pTrabajo;
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 10px; }
+  .porfolio .pFreelance {
+    grid-area: pFreelance;
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 10px;
+    align-items: flex-end; }
+  .porfolio img {
+    width: 60%;
+    position: relative;
+    justify-content: center; }
+  .porfolio a {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    font-style: italic;
+    padding-bottom: 10px; }
+
+/* TRABAJOS */
+.trabajos h4 {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  margin: 0px;
+  margin-top: 2px;
+  color: #ffffff;
+  text-align: center; }
+
+.trabajos h2 {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center; }
+
+.trabajos h3 {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0px; }
+
+.trabajos .flow .flow__imgs, .trabajos .flow .pettersen__imgs, .trabajos .pettersen .flow__imgs, .trabajos .pettersen .pettersen__imgs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  order: 1; }
+  .trabajos .flow .flow__imgs img, .trabajos .flow .pettersen__imgs img, .trabajos .pettersen .flow__imgs img, .trabajos .pettersen .pettersen__imgs img {
+    width: 25%;
+    margin: 2%;
+    margin-top: 0px; }
+
+.trabajos .flow .pettersen__media div, .trabajos .pettersen .pettersen__media div {
+  width: 50%;
+  float: left; }
+
+.trabajos .flow .pettersen__media img, .trabajos .pettersen .pettersen__media img {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  padding: 5%; }
+
+.trabajos .flow .pettersen__media iframe, .trabajos .pettersen .pettersen__media iframe {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 5%;
+  height: 238px; }
+
+.trabajos .volverP {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0px;
+  margin-top: 70px;
+  color: #FFFFFF;
+  text-align: center; }
+  .trabajos .volverP a {
+    color: #FFFFFF; }
+  .trabajos .volverP a:hover {
+    color: #8D59B5;
+    text-decoration-line: none; }
+
+/* FREELANCE */
+.freelance h4 {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  margin: 0px;
+  margin-top: 2px;
+  color: #ffffff;
+  text-align: center; }
+
+.freelance h2 {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center; }
+
+.freelance h3 {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0px;
+  position: relative; }
+
+.freelance .withCam .withCam__div1, .freelance .withCam .withCam__div2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.freelance .withCam .withCam__div1 img {
+  width: 20%;
+  margin: 2.5%; }
+
+.freelance .withCam .withCam__div2 div {
+  width: 50%; }
+  .freelance .withCam .withCam__div2 div img, .freelance .withCam .withCam__div2 div iframe {
+    width: 90%;
+    margin: 4%; }
+
+.freelance .cataBook .cataBook__div {
+  width: 50%;
+  float: left; }
+
+.freelance .cataBook img {
+  width: 50%;
+  padding: 5%;
+  float: left;
+  z-index: -1; }
+
+.freelance .cataBook .cataBook__div__img2 {
+  margin-top: 15%; }
+
+.freelance .volverP {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0px;
+  margin-top: 70px;
+  color: #FFFFFF;
+  text-align: center; }
+  .freelance .volverP a {
+    color: #FFFFFF; }
+  .freelance .volverP a:hover {
+    color: #8D59B5;
+    text-decoration-line: none; }
+
+/* CONTACTO */
+.contacto div {
+  float: left;
+  width: 50%; }
+
+.contacto img {
+  width: 60%;
+  margin: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.contacto .formulario {
+  border-radius: 5px;
+  margin: 10%;
+  border-style: none; }
+  .contacto .formulario div {
+    padding: 12px 20px;
+    margin: 8px 0;
+    outline: none;
+    box-sizing: border-box;
+    clear: both; }
+  .contacto .formulario legend {
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    border-bottom: none; }
+  .contacto .formulario input, .contacto .formulario textarea {
+    font-family: Josefin Sans;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 5px;
+    width: 200%;
+    height: 30px;
+    margin-top: 5px;
+    border-style: none;
+    color: #FFFFFF;
+    resize: vertical;
+    font-size: 17px; }
+  .contacto .formulario .form-enviar input {
+    font-family: Josefin Sans;
+    font-size: 20px;
+    line-height: 24px;
+    background: #4D0089;
+    border-radius: 5px;
+    width: 113px;
+    height: 44px;
+    color: #FFFFFF; }
+  .contacto .formulario .form-enviar input:hover {
+    transform: scale(1.1, 1.1);
+    background-color: #2C004E; }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+  /*MEDIA HEADER*/
+  header {
+    padding: 5px;
+    justify-content: center; }
+    header nav {
+      width: 100%;
+      text-align: center;
+      background-color: transparent;
+      padding: 5%; }
+      header nav div {
+        padding: 0px 5% 0px 5%; }
+    header a {
+      width: 50%;
+      padding-left: 5%;
+      padding-right: 5%; }
+    header h1 {
+      text-align: center;
+      padding-left: 0%; }
+    header .contenedorContacto {
+      padding: 7px 5% 7px 5%; }
+  /*MEDIA PORFOLIO*/
+  .porfolio {
+    display: grid;
+    grid-template-areas: "pTrabajo" "pFreelance";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin: 10px; }
+    .porfolio .pTrabajo, .porfolio .pFreelance {
+      display: block; }
+    .porfolio img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    .porfolio h2, .porfolio h3 {
+      text-align: center; }
+  /* MEDIA FREELANCE*/
+  .freelance .withCam {
+    margin: 10px; }
+    .freelance .withCam .withCam__div1 img {
+      width: 44%; }
+    .freelance .withCam .withCam__div2 {
+      justify-content: center;
+      grid-column-gap: 10px; }
+    .freelance .withCam .withCam__div2 div {
+      width: 100%; }
+  .freelance .cataBook .cataBook__div {
+    width: 100%; }
+  /*MEDIA TRABAJOS*/
+  .trabajos .pettersen .pettersen__imgs img, .trabajos .pettersen .flow__imgs img, .trabajos .flow .pettersen__imgs img, .trabajos .flow .flow__imgs img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; }
+  .trabajos .pettersen .pettersen__media div, .trabajos .flow .pettersen__media div {
+    width: 100%; }
+  /* MEDIA SOBRE MI*/
+  .sobreMi img {
+    width: 85%; }
+  .sobreMi p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 9%;
+    margin-right: 9%; }
+  /*MEDIA CONTACTO*/
+  .contacto div {
+    float: none;
+    width: fit-content; }
+  .contacto .formDiv {
+    margin-right: auto;
+    margin-left: auto; }
+  .contacto .formulario input, .contacto .formulario textarea {
+    width: 250px; }
+  /*MEDIA FOOTER*/
+  footer {
+    display: block;
+    bottom: 0;
+    text-align: center; }
+    footer .informacion {
+      text-align: center; }
+  .footerContacto {
+    padding-top: 0px; } }
+
+* {
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 0px;
+  background-color: #000000;
+  color: aliceblue;
+  font-family: 'Josefin Sans', sans-serif; }
+  body img:hover {
+    transform: scale(1.05); }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.index img:hover {
+  transform: scale(1); }
+
+.index img {
+  width: auto; }

@@ -1,0 +1,30 @@
+/* FOOTER */
+footer{
+    font-size: 13px;
+    margin: 25px;
+    img{
+        width: 40px;
+    }
+    .redes{
+        padding-bottom: 10px;
+        img:hover{
+            transform: scale(1.20);
+        }
+    
+    }
+    .informacion{
+        text-align: right;
+        color:$colorPrimarioUno;
+        .creditos{
+            color: $colorPrimarioUno;
+            text-decoration-line: underline;
+        }
+        .creditos:hover{
+            color: $colorSecundarioHover;
+        }
+    }
+}
+
+.footerContacto{
+    padding-top: 50%;
+}

@@ -1,0 +1,44 @@
+/* HEADER */
+
+header{
+    padding: 5px 20px 0px 5px;
+    width: 100%;
+    text-decoration: none;
+    background-color: $colorPrimarioUno;
+    h1{
+        padding-left: 50px;
+    }
+    a{
+        text-decoration: none;
+        padding-right: 50px;
+        color: #000000;
+    }
+    a:hover{
+        color: $colorSecundario;
+        text-decoration-line: none;
+    }
+    nav{
+        float: right;
+        padding: 20px 0px 20px 20px;
+        div{
+            padding-right: 50px;
+        }
+        button{
+            padding: 0px;
+        }
+        .contenedorContacto{
+            background-color:$colorSecundario;
+            color: $colorPrimarioUno;
+            padding:7px;
+            border-radius: 3px;
+        }
+        .contenedorContacto:hover {
+            background-color: $colorSecundarioHover;
+            color: $colorPrimarioUno;
+        }
+    
+    }
+    nav button{
+        border-color:$colorPrimarioUno;
+    }
+}

@@ -1,0 +1,276 @@
+/* SOBRE MI */
+
+
+.sobreMi{
+    img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    
+    }
+    h2{
+        font-size: 40px;
+        line-height: 36px;
+        text-align: center;
+        margin: 60px;
+    }
+    p{
+        margin-left: 17%;
+        margin-right: 17%;
+        height: auto;
+        font-size: 28px;
+        line-height: 48px;
+        text-align: center;
+    }
+    
+}
+
+/* PORFOLIO */
+@mixin porfolioCajas ($area){
+    grid-area: $area;
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 10px;
+
+    @if $area == pFreelance {
+        align-items: flex-end;
+    }
+}
+
+.porfolio{
+    display: grid;
+    grid-template-areas:"pTrabajo pFreelance";
+    padding-top: 23px;
+
+    .pTrabajo{
+        @include porfolioCajas(pTrabajo)
+    }
+    .pFreelance{
+        @include porfolioCajas(pFreelance)
+    }
+    img{
+        width: 60%;
+        position: relative;
+        justify-content: center;
+    }
+    a{
+        text-decoration-line: underline;
+        color: $colorPrimarioUno;
+        font-style: italic;
+        padding-bottom: 10px;
+    }
+
+}
+
+// mixin para textos en trabajos y freelance
+@mixin pFonts ($seccion){
+    h4{
+        font-style: italic;
+        font-size: 18px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        margin: 0px;
+        margin-top: 2px;
+        color: #ffffff;
+        text-align: center;
+    }
+    h2{
+        font-size: 36px;
+        line-height: 36px;
+        text-align: center;    
+    }
+    h3{
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        margin: 0px;
+        @if $seccion == freelance{
+            position: relative;
+        }    
+    }
+}
+@mixin volverP ($seccion){
+    font-style: italic;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0px;
+    margin-top: 70px;
+    color: $colorPrimarioUno;
+    text-align: center;
+    a{
+        color:$colorPrimarioUno;
+    }
+    a:hover{
+        color: $colorSecundarioHover;
+        text-decoration-line: none;
+    }
+}
+
+/* TRABAJOS */
+.trabajos{
+    @include pFonts(trabajos)
+}
+
+
+.trabajos{
+    .flow,.pettersen{
+        .flow__imgs,.pettersen__imgs{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            order: 1;
+            img{
+                width: 25%;
+                margin: 2%;
+                margin-top: 0px;
+            }        
+        }
+        .pettersen__media{
+            div{
+                width: 50%;
+                float: left;        
+            }
+            img{
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-bottom: 5%;
+                padding: 5%;        
+            }
+            iframe{
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+                padding: 5%;
+                height: 238px;
+            
+            }
+        }
+    }
+    .volverP{
+        @include volverP (trabajos)
+    }
+    
+}
+
+/* FREELANCE */
+
+
+.freelance{
+    @include pFonts(freelance)
+}
+
+
+.freelance{
+    .withCam{
+        .withCam__div1, .withCam__div2{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;        
+        }
+        .withCam__div1 img{
+            width: 20%;
+            margin: 2.5%;        
+        }
+        .withCam__div2 div{
+            width: 50%;
+            img,iframe{
+                width: 90%;
+                margin: 4%;            
+            }
+        }
+    }
+    .cataBook{
+        .cataBook__div{
+            width: 50%;
+            float:left;        
+        }
+        img{
+            width: 50%;
+            padding: 5%;
+            float: left;
+            z-index: -1;
+        }
+        .cataBook__div__img2{
+            margin-top: 15%;
+        }
+    }
+    .volverP{
+        @include volverP (freelance)
+    }
+    
+}
+
+/* CONTACTO */
+
+.contacto {
+    div{
+        float: left;
+        width: 50%;
+    }
+    
+    img{
+        width: 60%;
+        margin: 5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .formulario {
+        border-radius: 5px;
+        margin: 10%;
+        border-style: none;
+        div{
+            padding: 12px 20px;
+            margin: 8px 0;
+            outline: none;
+            box-sizing: border-box;
+            clear: both;
+        }
+        legend{
+            font-size: 36px;
+            line-height: 36px;
+            color: $colorPrimarioUno;
+            border-bottom: none;        
+        }
+        input,textarea{
+            font-family: Josefin Sans;
+            background: rgba(196, 196, 196, 0.2);
+            border-radius: 5px;
+            width: 200%;
+            height: 30px;
+            margin-top: 5px;
+            border-style: none;
+            color: $colorPrimarioUno;
+            resize: vertical;
+            font-size: 17px;        
+        }
+        .form-enviar{
+            input{
+                font-family: Josefin Sans;
+                font-size: 20px;
+                line-height: 24px;
+                background: $colorSecundario;
+                border-radius: 5px;
+                width: 113px;
+                height: 44px;
+                color: #FFFFFF;            
+            }
+            input:hover{
+                transform: scale(1.1,1.1);
+                background-color: #2C004E;            
+            }
+        }
+    }
+}
+
+
+

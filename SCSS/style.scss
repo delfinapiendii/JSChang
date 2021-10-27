@@ -1,0 +1,48 @@
+
+
+
+// variables definidas del SCSS 
+
+$colorPrimarioUno: #FFFFFF;
+$colorSecundario:#4D0089;
+$colorSecundarioHover:#8D59B5;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Slab&display=swap');
+@import "header";
+@import "footer";
+@import "main";
+
+@import "media";
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: #000000;
+    color: aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+    img:hover{
+        transform: scale(1.05);
+    }
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.index{
+    img:hover{
+        transform: scale(1);
+    }
+    
+    img {
+        width: auto;
+    }
+}
+
