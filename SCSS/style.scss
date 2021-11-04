@@ -27,6 +27,8 @@ body{
     background-color: #000000;
     color: aliceblue;
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+
     img:hover{
         transform: scale(1.05);
     }
@@ -35,6 +37,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-}
+    scroll-behavior: smooth;
 
+}
 
